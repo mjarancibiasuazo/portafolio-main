@@ -37,14 +37,14 @@ body::before {
   }
 }
 
-a {
-  color: #9B40FF;
+ a {
+  color: #fff;
 }
 
 a:hover {
-  color: #35e888;
+  color: #9B40FF;
   text-decoration: none;
-}
+} 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -366,7 +366,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #9B40FF;
   margin: 4px 10px;
 }
 
@@ -658,6 +658,17 @@ section .container {
   border: 2px solid #9B40FF;
 }
 
+.resume-descarga {
+ text-align: center;
+}
+
+/* .icofont-download {
+  color: #9B40FF;
+}
+
+.icofont-download:hover {
+  color: #fff;
+} */
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -934,7 +945,7 @@ section .container {
 }
 
 .contact .info-box .social-links a {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   color: #fff;
   line-height: 1;
@@ -1079,6 +1090,15 @@ section .container {
   }
 }
 
+.mdi-content-copy {
+  font-size: 20px;
+  color: #fff;
+}
+
+.mdi-content-copy:hover {
+  color: #9B40FF
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1177,7 +1197,7 @@ section .container {
 }
 
 .credits a {
-  color: #9B40FF;
+  color: #40ABFD;
   transition: 0.3s;
 }
 

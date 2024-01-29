@@ -25,6 +25,7 @@
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -79,7 +80,7 @@
 
             <div class="row">
                 <div class="col-lg-4" data-aos="fade-right">
-                    <img src="assets/img/mariaJose.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/mariaJose.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>Desarrollador Web Front-end </h3>
@@ -299,7 +300,17 @@
                         <h5>2006 - 2010</h5>
                         <p><em>Duoc UC, San Carlos de Apoquindo, Santiago de Chile</em></p>
                     </div>
+                    <div class="resume-descarga">
+                        <h4>Descargar CV 
+                            <a href="#" id="descargarCV" data-toggle="tooltip" data-placement="left" title="Descargar CV">
+                            <i class="icofont-download"></i></a></h4>
+                        <!-- Agrega un formulario oculto -->
+                        <form id="downloadForm" action="file:///C:/Users/jaran/OneDrive/Documentos/CV%20MJ%202024/CV%20MJARANCIBIA-2024.pdf" method="get" target="_blank" style="display: none;">
+                          <button type="submit" id="downloadButton"></button>
+                        </form>
+                      </div>
                 </div>
+    
                 <div class="col-lg-6">
                     <h3 class="resume-title">Experiencia Profesional</h3>
                     <div class="resume-item">
@@ -414,18 +425,17 @@
                     <div class="info-box">
                         <i class="bx bx-envelope"></i>
                         <h3>Email</h3>
-                        <p>mjarancibiasuazo@gmail.com</p>
+                        <p><span id="email">mjarancibiasuazo@gmail.com</span>
+                            &nbsp;<span class="mdi mdi-content-copy" onclick="copiarCorreo()" style="cursor: pointer;"></span>
+                        </div></p>
                     </div>
                 </div>
-
             </div>
-
-        </div>
     </section>
     <!-- Fin de contacto sección -->
 
     <div class="credits">
-        <a href="https://mjarancibiasuazo.github.io/portafolio/">MJAS &copy 2021</a>
+        <a href="https://mjarancibiasuazo.github.io/portafolio/">MJAS &copy 2024</a>
     </div>
 
     <!-- Vendor JS archivos -->
@@ -441,6 +451,8 @@
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/descarga-cv.js"></script>
+    <script src="assets/js/copiar-correo.js"></script>
 
 </body>
 
