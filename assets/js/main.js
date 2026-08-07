@@ -169,3 +169,44 @@
   });
 
 })(jQuery);
+
+$(document).ready(function () {
+
+  $(".portfolio-carousel").owlCarousel({
+
+    loop: false,
+
+    margin: 30,
+
+    nav: true,
+
+    dots: true,
+
+    autoplay: false,
+
+    smartSpeed: 600,
+
+    navText: [
+      '<i class="mdi mdi-chevron-left"></i>',
+      '<i class="mdi mdi-chevron-right"></i>'
+    ],
+
+    responsive: {
+
+      0: {
+        items: 1
+      },
+
+      768: {
+        items: 2
+      },
+
+      1200: {
+        items: 3
+      }
+
+    }
+
+  });
+
+});

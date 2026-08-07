@@ -1235,3 +1235,272 @@ background: #9B40FF;
 .credits a:hover {
   color: #fff;
 }
+
+/* ======================================================
+   PORTAFOLIO - NUEVO DISEÑO
+====================================================== */
+
+.portfolio-carousel {
+  position: relative;
+  padding: 10px 0 50px;
+}
+
+
+/* TARJETA */
+
+.portfolio-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: #72f16a;
+  box-shadow: 0 10px 30px rgba(114, 241, 106, 0.12);
+}
+
+
+/* IMAGEN */
+
+.portfolio-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 12px;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+  transform: scale(1.03);
+}
+
+
+/* CONTENIDO */
+
+.portfolio-content {
+  padding: 25px;
+}
+
+
+.portfolio-content h4 {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  min-height: 55px;
+}
+
+
+.portfolio-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  min-height: 102px;
+}
+
+
+/* TECNOLOGÍAS */
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 25px;
+}
+
+
+.portfolio-tags span {
+  display: inline-flex;
+  align-items: center;
+
+  background: rgba(114, 241, 106, 0.12);
+  border: 1px solid rgba(114, 241, 106, 0.35);
+
+  color: #72f16a;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+
+/* ENLACES */
+
+.portfolio-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 18px;
+}
+
+
+.portfolio-links a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+
+.portfolio-links a:hover {
+  color: #72f16a;
+}
+
+
+.portfolio-links i {
+  font-size: 25px;
+}
+
+
+/* ======================================================
+   OWL CAROUSEL
+====================================================== */
+
+.portfolio-carousel .owl-stage {
+  display: flex;
+}
+
+
+.portfolio-carousel .owl-item {
+  display: flex;
+}
+
+
+.portfolio-carousel .owl-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+
+.portfolio-carousel .owl-nav button.owl-prev,
+.portfolio-carousel .owl-nav button.owl-next {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.08) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+
+  border-radius: 50% !important;
+
+  color: #ffffff !important;
+
+  font-size: 28px !important;
+
+  transition: all 0.3s ease;
+}
+
+
+.portfolio-carousel .owl-nav button:hover {
+  background: #72f16a !important;
+  border-color: #72f16a !important;
+  color: #000000 !important;
+}
+
+
+/* PUNTOS */
+
+.portfolio-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.portfolio-carousel .owl-dot span {
+  width: 8px;
+  height: 8px;
+
+  display: block;
+
+  margin: 5px;
+
+  background: rgba(255, 255, 255, 0.3);
+
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+
+.portfolio-carousel .owl-dot.active span {
+  width: 22px;
+  border-radius: 20px;
+  background: #72f16a;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 991px) {
+
+  .portfolio-content h4 {
+    font-size: 21px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .portfolio-image {
+    height: 210px;
+  }
+
+  .portfolio-content {
+    padding: 20px;
+  }
+
+  .portfolio-content h4 {
+    min-height: auto;
+  }
+
+  .portfolio-content p {
+    min-height: auto;
+  }
+
+  .portfolio-carousel .owl-nav {
+    justify-content: center;
+  }
+
+}
