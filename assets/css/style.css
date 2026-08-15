@@ -1250,7 +1250,7 @@ background: #9B40FF;
 
 .portfolio-card {
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(155, 64, 255, 0.35);
   border-radius: 12px;
   overflow: hidden;
   height: 100%;
@@ -1258,11 +1258,10 @@ background: #9B40FF;
     box-shadow 0.3s ease;
 }
 
-
 .portfolio-card:hover {
   transform: translateY(-6px);
-  border-color: #72f16a;
-  box-shadow: 0 10px 30px rgba(114, 241, 106, 0.12);
+  border-color: #9B40FF;
+  box-shadow: 0 10px 30px rgba(155, 64, 255, 0.18);
 }
 
 
@@ -1308,18 +1307,11 @@ background: #9B40FF;
 
 .portfolio-content p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.5;
   margin-bottom: 20px;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-
   min-height: 102px;
 }
-
 
 /* TECNOLOGÍAS */
 
@@ -1335,10 +1327,10 @@ background: #9B40FF;
   display: inline-flex;
   align-items: center;
 
-  background: rgba(114, 241, 106, 0.12);
-  border: 1px solid rgba(114, 241, 106, 0.35);
+  background: rgba(155, 64, 255, 0.12);
+  border: 1px solid rgba(155, 64, 255, 0.45);
 
-  color: #72f16a;
+  color: #B56BFF;
 
   font-size: 12px;
   font-weight: 600;
@@ -1375,7 +1367,7 @@ background: #9B40FF;
 
 
 .portfolio-links a:hover {
-  color: #72f16a;
+  color:#9B40FF;
 }
 
 
